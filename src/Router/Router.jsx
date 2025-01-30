@@ -5,6 +5,7 @@ import NavBar from "../components/navBar/NavBar";
 import Footer from "../components/footer/Footer";
 import Services from "../containers/services/Services"
 import AboutUs from "../containers/aboutUs/AboutUs"
+import Contact from "../containers/contact/Contact";
 
 function RouterComponent() {
   return (
@@ -14,6 +15,7 @@ function RouterComponent() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer /> 
     </Router>

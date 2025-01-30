@@ -14,7 +14,7 @@ function NavBar() {
         <Link className="text-white hover:font-bold" to="/services">Services</Link>
         <Link className="text-white hover:font-bold" to="/">News</Link>
         <Link className="text-white hover:font-bold" to="/about">About Us</Link>
-        <Link className="text-white hover:font-bold" to="/">Contacts</Link>
+        <Link className="text-white hover:font-bold" to="/contact">Contacts</Link>
       </div>
       <div className="flex items-center w-15 justify-evenly">
         <div>
