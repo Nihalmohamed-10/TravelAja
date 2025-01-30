@@ -1,10 +1,10 @@
 import React from "react";
 import mainLogo from "../../assets/images/mainLogo.png";
-import fooricon1 from "../../assets/images/footicon1.png";
-import fooricon2 from "../../assets/images/footicon2.png";
-import fooricon3 from "../../assets/images/footicon3.png";
-import fooricon4 from "../../assets/images/footicon4.png";
-import fooricon5 from "../../assets/images/footicon5.png";
+import fooricon1 from "../../assets/images/footIcon1.png";
+import fooricon2 from "../../assets/images/footIcon2.png";
+import fooricon3 from "../../assets/images/footIcon3.png";
+import fooricon4 from "../../assets/images/footIcon4.png";
+import fooricon5 from "../../assets/images/footIcon5.png";
 function Footer() {
   return (
 <div className="bg-[#295943] flex justify-evenly pt-[41px] pr-[50px] pb-[41px] pl-[50px]">
