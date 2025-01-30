@@ -1,10 +1,10 @@
 import React from "react";
 import mainLogo from "../../assets/images/mainLogo.png";
-import fooricon1 from "../../assets/images/footIcon1.png";
-import fooricon2 from "../../assets/images/footIcon2.png";
-import fooricon3 from "../../assets/images/footIcon3.png";
-import fooricon4 from "../../assets/images/footIcon4.png";
-import fooricon5 from "../../assets/images/footIcon5.png";
+import footicon1 from "../../assets/images/footIcon1.png";
+import footicon2 from "../../assets/images/footIcon2.png";
+import footicon3 from "../../assets/images/footIcon3.png";
+import footicon4 from "../../assets/images/footIcon4.png";
+import footicon5 from "../../assets/images/footIcon5.png";
 function Footer() {
   return (
 <div className="bg-[#295943] flex justify-evenly pt-[41px] pr-[50px] pb-[41px] pl-[50px]">
@@ -22,19 +22,19 @@ function Footer() {
         <p className="text-[19px] font-bold text-[#FFFFFF]">Ikuti Kami</p>
         <div className="flex justify-between w-[202px]">
             <div>
-                <img src={fooricon1} alt="" />
+                <img src={footicon1} alt="" />
             </div>
             <div>
-                <img src={fooricon2} alt="" />
+                <img src={footicon2} alt="" />
             </div>
             <div>
-                <img src={fooricon3} alt="" />
+                <img src={footicon3} alt="" />
             </div>
             <div>
-                <img src={fooricon4} alt="" />
+                <img src={footicon4} alt="" />
             </div>
             <div>
-                <img src={fooricon5} alt="" />
+                <img src={footicon5} alt="" />
             </div>
         </div>
       </div>
