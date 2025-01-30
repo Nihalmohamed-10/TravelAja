@@ -1,4 +1,6 @@
 import React from "react";
+import map from "../../assets/images/map.png";
+
 
 function MapDiv() {
   return (
@@ -60,9 +62,11 @@ function MapDiv() {
       </div>
 
       <div>
-        <div>{/* here i need to show map */}</div>
+        <div className="w-[90%]">
+          <img className="w-[100%] block" src={map} alt="" />
+        </div>
         <div>
-          <div>
+          <div className="flex items-center">
             <div>
               <p>Address</p>
               <p>City</p>

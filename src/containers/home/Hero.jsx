@@ -2,7 +2,7 @@ import React from "react";
 import heroBg from "../../assets/images/heroBg.png";
 import locationIcon from "../../assets/images/locationIcon.png";
 
-export function Hero() {
+ function Hero() {
   return (
     <div className="relative">
       <img
