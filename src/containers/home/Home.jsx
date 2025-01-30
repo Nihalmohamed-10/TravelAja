@@ -7,6 +7,7 @@ import Testimonial from './Testimonial'
 function Home() {
   return (
     <div>
+      hello
         <Hero/>
         <TravelersPoint/>
         <Destination/>
