@@ -65,8 +65,8 @@ function MapDiv() {
         <div className="w-[90%]">
           <img className="w-[100%] block" src={map} alt="" />
         </div>
-        <div>
-          <div className="flex items-center">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between">
             <div>
               <p>Address</p>
               <p>City</p>
@@ -78,7 +78,7 @@ function MapDiv() {
               <p>At 8AM</p>
             </div>
           </div>
-          <div>
+          <div className="flex items-center justify-between">
             <div>
               <p>Phone</p>
               <p>Email</p>
