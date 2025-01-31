@@ -1,5 +1,5 @@
 import React from 'react';
-import ServicesHero from '../../assets/images/servicesHero.png'; 
+import ServicesHero from '../../assets/images/ServicesHero.png'; 
 
 function ServiceHero() {
   return (
