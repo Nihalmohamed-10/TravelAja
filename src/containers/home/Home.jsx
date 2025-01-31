@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./hero";
+import Hero from "./Hero";
 import TravelersPoint from "./TravelersPoint";
 import Destination from "./Destination";
 import Testimonial from "./Testimonial";
