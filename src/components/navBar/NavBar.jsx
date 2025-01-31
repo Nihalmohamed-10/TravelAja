@@ -3,7 +3,6 @@ import mainLogo from "../../assets/images/mainLogo.png";
 import flag from "../../assets/images/flag.png";
 import { Link } from "react-router-dom";
 
-
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -47,13 +46,17 @@ function NavBar() {
         </div>
       </div>
 
+      {/* Hamburger menu button */}
       <div
-        className="lg:hidden flex items-center"
+        className="lg:hidden flex flex-col justify-between items-center w-6 h-6 cursor-pointer"
         onClick={handleHamburgerClick}
       >
-        <FiMenu className="text-white text-2xl cursor-pointer" />
+        <div className="w-full h-1 bg-white mb-1"></div>
+        <div className="w-full h-1 bg-white mb-1"></div>
+        <div className="w-full h-1 bg-white"></div>
       </div>
 
+      {/* Mobile menu links */}
       {isMenuOpen && (
         <div className="lg:hidden absolute top-16 right-0 bg-[#295943] text-center w-full h-[380px] p-5">
           <Link className="block text-white hover:font-bold py-2 mb-4" to="/">
