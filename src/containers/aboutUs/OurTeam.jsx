@@ -2,7 +2,7 @@ import React from "react";
 import { ourTeam } from "../../data";
 import grayImg1 from "../../assets/images/grayImg1.png";
 import grayImg2 from "../../assets/images/grayImg2.png";
-import grayImg3 from "../../assets/images/grayImg3.png";
+import grayimg3 from "../../assets/images/grayimg3.png";
 import grayImg4 from "../../assets/images/grayImg4.png";
 
 function OurTeam() {
@@ -34,7 +34,7 @@ function OurTeam() {
           <img src={grayImg2} alt="img" />
         </div>
         <div className="w-[70%] mx-auto lg:w-[100%]">
-          <img src={grayImg3} alt="img" />
+          <img src={grayimg3} alt="img" />
         </div>
         <div className="w-[70%] mx-auto lg:w-[100%]">
           <img src={grayImg4} alt="" />
