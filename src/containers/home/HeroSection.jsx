@@ -37,7 +37,7 @@ import locationIcon from "../../assets/images/locationIcon.png";
           <div className="p-2 text-[11px] sm:text-[14px] lg:text-[16px]">
             Person
           </div>
-          <button className="sm:text-[14px] bg-green-500 text-white p-2 rounded text-[11px] lg:text-[16px] ">
+          <button className="cursor-pointer sm:text-[14px] bg-green-500 text-white p-2 rounded text-[11px] lg:text-[16px] ">
             Find trip now
           </button>
         </div>

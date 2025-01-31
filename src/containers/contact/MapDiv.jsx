@@ -3,7 +3,7 @@ import map from "../../assets/images/map.png";
 
 function MapDiv() {
   return (
-    <div className="flex flex-col mt-20 xl:flex-row">
+    <div className="flex flex-col mt-10 xl:flex-row">
       <div className="max-w-[600px] mx-auto p-6 bg-white  rounded-lg ">
         <h2 className="text-[27px] font-bold text-gray-800 mb-4">
           Get in Touch

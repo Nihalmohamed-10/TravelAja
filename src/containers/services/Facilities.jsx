@@ -23,7 +23,7 @@ function Facilities() {
             porttitor rhoncus dolor purus non enim luctus venenatis, lectus
             magna fringilla urna, porttitor rhoncus dolor purus non eni
           </p>
-          <button className="w-[127px] pt-[10px] pr-[20px] pb-[10px] pl-[20px] bg-[#43B97F] rounded-lg text-[white]">
+          <button className="cursor-pointer w-[127px] pt-[10px] pr-[20px] pb-[10px] pl-[20px] bg-[#43B97F] rounded-lg text-[white]">
             Read More
           </button>
         </div>

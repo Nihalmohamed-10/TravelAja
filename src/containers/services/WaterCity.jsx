@@ -3,7 +3,7 @@ import { watercity } from "../../data";
 import { waterDreams } from "../../data";
 function WaterCity() {
   return (
-    <div className="mt-10 pb-20">
+    <div className=" pb-20">
       <div className="grid grid-cols-1 gap-8 p-10 justify-evenly sm:grid-cols-2 xl:grid-cols-4">
         {watercity.map((item, index) => (
           <div className="flex flex-col gap-4 md:mx-auto " key={index}>
@@ -12,7 +12,7 @@ function WaterCity() {
             </div>
             <p className="text-[19px] text-[#3D3E48] font-bold">{item.head}</p>
             <p className="text-[16px] font-light w-[280px]">{item.content}</p>
-            <button className="bg-[#43B97F] w-[119px] pt-[5px] pr-[15px] pb-[5px] pl-[15px] rounded-xl text-[white]">
+            <button className="cursor-pointer bg-[#43B97F] w-[119px] pt-[5px] pr-[15px] pb-[5px] pl-[15px] rounded-xl text-[white]">
               {item.btnContent}
             </button>
           </div>
@@ -31,7 +31,7 @@ function WaterCity() {
                 <p className="text-[14px] w-[250px] font-light">
                   {item.content}
                 </p>
-                <button className="hover:bg-[green] w-[119px] pt-[5px] pr-[15px] pb-[5px] pl-[15px] border border-green-300 rounded-lg">
+                <button className="cursor-pointer hover:bg-[green] w-[119px] pt-[5px] pr-[15px] pb-[5px] pl-[15px] border border-green-300 rounded-lg">
                   Read More
                 </button>
               </div>

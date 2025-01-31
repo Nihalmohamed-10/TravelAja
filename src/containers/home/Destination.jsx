@@ -9,7 +9,7 @@ function Destination() {
         <h2 className="text-[27px] font-bold">Discover your love</h2>
       </div>
 
-      <div className="w-[80%] mx-auto grid grid-cols-1 justify-items-center gap-y-6 gap-x-12 lg:grid-cols-2 lg:mt-10 xl:grid-cols-3 xl:w-[90%]">
+      <div className="cursor-pointer  w-[80%] mx-auto grid grid-cols-1 justify-items-center gap-y-6 gap-x-12 lg:grid-cols-2 lg:mt-10 xl:grid-cols-3 xl:w-[90%]">
         {destination.map((item, index) => (
           <div
             key={index}

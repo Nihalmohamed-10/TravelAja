@@ -4,10 +4,10 @@ import abouthero from '../../assets/images/abouthero.png';
 function AboutHero() {
   return (
     <div className='relative'>
-            <div className='w-[100%] h-[284px]'>
+            <div className='w-[100%] '>
                 <img className='w-[100%] h-[184px]' src={abouthero} alt="Service Hero" />
             </div>
-            <h2 className='text-[22px] font-bold text-[#FFFFFF] absolute left-[50px] bottom-[138px] xl:text-[30px]'>About Us</h2> 
+            <h2 className='text-[22px] font-bold text-[#FFFFFF] absolute left-[50px] bottom-[42px] xl:text-[30px]'>About Us</h2> 
         </div>
   );
 }

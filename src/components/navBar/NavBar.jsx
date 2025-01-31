@@ -1,38 +1,54 @@
 import React, { useState } from "react";
-import mainLogo from "../../assets/images/mainLogo.png";
+import { useLocation } from "react-router-dom"; 
+
 import flag from "../../assets/images/flag.png";
 import { Link } from "react-router-dom";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const handleHamburgerClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  
+  const isHomePage = location.pathname === "/";
+
+
+  const hamburgerColor = isHomePage ? "bg-white" : "bg-black"; 
+  const linkColor = isMenuOpen ? "text-white" : isHomePage ? "text-white" : "text-black";  
+  const idColor = isHomePage ? "text-white" : "text-black";  
+  const mainClr = isHomePage? "text-white" : "text-black"
+
   return (
-    <div className="flex items-center w-full pt-5 pr-12 pb-5 pl-12 justify-between bg-transparent absolute z-10">
+    <div
+      className="flex items-center w-full pt-5 pr-12 pb-5 pl-12 justify-between bg-transparent"
+      style={isHomePage ? { zIndex: 10, position: "absolute" } : {}}
+    >
       <div>
-        <img src={mainLogo} alt="Main Logo" />
+        
+        <h3 className={`${mainClr} text-[30px] text-[white]`}>travelaja</h3>
+        
       </div>
 
       <div className="hidden lg:flex w-[44em] justify-evenly">
-        <Link className="text-white hover:font-bold" to="/">
+        <Link className={`${linkColor} hover:font-bold`} to="/">
           Home
         </Link>
-        <Link className="text-white hover:font-bold" to="/">
+        <Link className={`${linkColor} hover:font-bold`} to="/">
           Discover
         </Link>
-        <Link className="text-white hover:font-bold" to="/services">
+        <Link className={`${linkColor} hover:font-bold`} to="/services">
           Services
         </Link>
-        <Link className="text-white hover:font-bold" to="/">
+        <Link className={`${linkColor} hover:font-bold`} to="/">
           News
         </Link>
-        <Link className="text-white hover:font-bold" to="/about">
+        <Link className={`${linkColor} hover:font-bold`} to="/about">
           About Us
         </Link>
-        <Link className="text-white hover:font-bold" to="/contact">
+        <Link className={`${linkColor} hover:font-bold`} to="/contact">
           Contacts
         </Link>
       </div>
@@ -42,46 +58,51 @@ function NavBar() {
           <img src={flag} alt="Flag" />
         </div>
         <div>
-          <p className="text-white">ID</p>
+          <p className={`${idColor}`}>ID</p> 
         </div>
       </div>
 
-      {/* Hamburger menu button */}
       <div
-        className="lg:hidden flex flex-col justify-between items-center w-6 h-6 cursor-pointer"
+        className={`lg:hidden flex flex-col justify-between items-center w-6 h-6 cursor-pointer z-20`}
         onClick={handleHamburgerClick}
       >
-        <div className="w-full h-1 bg-white mb-1"></div>
-        <div className="w-full h-1 bg-white mb-1"></div>
-        <div className="w-full h-1 bg-white"></div>
+        
+        <div
+          className={`w-full h-1 ${hamburgerColor} mb-1`} 
+        ></div>
+        <div
+          className={`w-full h-1 ${hamburgerColor} mb-1`} 
+        ></div>
+        <div
+          className={`w-full h-1 ${hamburgerColor}`} 
+        ></div>
       </div>
 
-      {/* Mobile menu links */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-16 right-0 bg-[#295943] text-center w-full h-[380px] p-5">
-          <Link className="block text-white hover:font-bold py-2 mb-4" to="/">
+        <div className="lg:hidden absolute top-16 right-0 bg-[#295943] text-center w-full h-[380px] p-5 z-30">
+          <Link className={`${linkColor} block hover:font-bold py-2 mb-4`} to="/">
             Home
           </Link>
-          <Link className="block text-white hover:font-bold py-2 mb-4" to="/">
+          <Link className={`${linkColor} block hover:font-bold py-2 mb-4`} to="/">
             Discover
           </Link>
           <Link
-            className="block text-white hover:font-bold py-2 mb-4"
+            className={`${linkColor} block hover:font-bold py-2 mb-4`}
             to="/services"
           >
             Services
           </Link>
-          <Link className="block text-white hover:font-bold py-2 mb-4" to="/">
+          <Link className={`${linkColor} block hover:font-bold py-2 mb-4`} to="/">
             News
           </Link>
           <Link
-            className="block text-white hover:font-bold py-2 mb-4"
+            className={`${linkColor} block hover:font-bold py-2 mb-4`}
             to="/about"
           >
             About Us
           </Link>
           <Link
-            className="block text-white hover:font-bold py-2 mb-4"
+            className={`${linkColor} block hover:font-bold py-2 mb-4`}
             to="/contact"
           >
             Contacts

@@ -7,7 +7,7 @@ import footicon4 from "../../assets/images/footIcon4.png";
 import footicon5 from "../../assets/images/footIcon5.png";
 function Footer() {
   return (
-<div className="bg-[#295943] flex flex-wrap gap-5 items-center justify-evenly pt-[41px] pr-[50px] pb-[41px] pl-[50px]">
+<div className="bg-[#295943] flex flex-wrap gap-8 items-center justify-evenly pt-[41px] pr-[50px] pb-[41px] pl-[50px]">
 
       <div className="flex flex-col gap-3">
         <div>

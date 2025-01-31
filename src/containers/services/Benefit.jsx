@@ -20,7 +20,7 @@ function Benefit() {
               <p className="max-w-[308px] text-[16px] font-light">
                 {item.content}
               </p>
-              <button className="bg-[#43B97F] w-[119px] pt-[5px] pr-[15px] pb-[5px] pl-[15px] rounded-xl text-[white]">
+              <button className="cursor-pointer bg-[#43B97F] w-[119px] pt-[5px] pr-[15px] pb-[5px] pl-[15px] rounded-xl text-[white]">
               Read More
             </button>
             </div>
