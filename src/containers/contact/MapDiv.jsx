@@ -1,15 +1,14 @@
 import React from "react";
 import map from "../../assets/images/map.png";
 
-
 function MapDiv() {
   return (
-    <div className="flex">
-      <div className="max-w-[600px] mx-auto p-6 bg-white shadow-md rounded-lg">
+    <div className="flex flex-col mt-20 xl:flex-row">
+      <div className="max-w-[600px] mx-auto p-6 bg-white  rounded-lg ">
         <h2 className="text-[27px] font-bold text-gray-800 mb-4">
           Get in Touch
         </h2>
-        <p className="max-w-[69%] text-[16px] mb-6 leading-relaxed">
+        <p className="max-w-[100%] text-[16px] mb-6 leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
           purus sit amet luctus venenatis, lectus magna fringilla urna,
           porttitor rhoncus dolor purus non enim praesent elementum facilisis.
@@ -61,30 +60,34 @@ function MapDiv() {
         </form>
       </div>
 
-      <div>
-        <div className="w-[90%]">
-          <img className="w-[100%] block" src={map} alt="" />
+      <div className="w-[100%]  xl:w-[50%]">
+        <div className="w-[90%] mx-auto h-[300px] overflow-hidden ">
+          <img
+            className="w-full h-full object-cover block"
+            src={map}
+            alt="Map"
+          />
         </div>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center justify-between">
-            <div>
-              <p>Address</p>
-              <p>City</p>
-              <p>Open</p>
+        <div className="max-w-[90%] mt-6 flex flex-col gap-5 items-center justify-between md:flex-row mx-auto justify-evenly xl:justify-between">
+          <div className="flex items-center w-[250px] justify-between">
+            <div className="flex flex-col gap-4 text-[16px] font-light">
+              <p>Address :</p>
+              <p>City :</p>
+              <p>Open :</p>
             </div>
-            <div>
+            <div className="flex flex-col gap-4 text-[16px] font-extralight">
               <p>JL.Cindelaras No.205A</p>
               <p>Yogyakarta, Indonesia</p>
               <p>At 8AM</p>
             </div>
           </div>
-          <div className="flex items-center justify-between">
-            <div>
-              <p>Phone</p>
-              <p>Email</p>
-              <p>Close</p>
+          <div className="flex items-center w-[250px] justify-between">
+            <div className="flex flex-col gap-4 text-[16px] font-light">
+              <p>Phone :</p>
+              <p>Email :</p>
+              <p>Close :</p>
             </div>
-            <div>
+            <div className="flex flex-col gap-4 text-[16px] font-extralight ">
               <p>+62 1234 432 567</p>
               <p>info@travelaja.com</p>
               <p>At 8PM</p>
@@ -94,6 +97,10 @@ function MapDiv() {
         <div>
           <p></p>
           <h2></h2>
+        </div>
+        <div className="mt-10 pb-20 text-center xl:text-start xl:pl-10">
+          <p className="text-[14px] font-light">AVAILABLE AT 9AM - 10PM</p>
+          <h1 className="text-[40px] mx-auto">+124 4537 9756</h1>
         </div>
       </div>
     </div>

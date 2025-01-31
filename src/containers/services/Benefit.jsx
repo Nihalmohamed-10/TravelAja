@@ -8,9 +8,10 @@ function Benefit() {
         <p className="">BENEFITS</p>
         <h2 className="text-[27px] font-bold">OUR SERVICE</h2>
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:mt-10 xl:grid-cols-3">
+
         {benefit.map((item, index) => (
-          <div className="flex gap-4 w-[380px]" key={index}>
+          <div className="flex gap-4 w-[80%] mx-auto" key={index}>
             <div className="w-[48px] h-[64px]">
               <img className="w-[100%] block" src={item.img} alt="" />
             </div>

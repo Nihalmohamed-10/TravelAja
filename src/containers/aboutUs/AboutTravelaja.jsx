@@ -3,8 +3,8 @@ import aboutTravel from "../../assets/images/aboutTravel.png";
 
 function AboutTravelaja() {
   return (
-    <div className="flex justify-evenly items-center pb-20">
-      <div className="flex flex-col gap-3 max-w-[60%]">
+    <div className="flex flex-wrap gap-8 justify-evenly items-center pb-20">
+      <div className="flex flex-col gap-3 max-w-[60%] lg:max-w-[47%]">
         <h2 className="text-[27px] font-bold">About Travelaja.com</h2>
         <p className="text-[16px]  font-extralight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dictum
