@@ -1,5 +1,5 @@
 import React from "react";
-import map from "../../assets/images/map.png";
+
 
 function MapDiv() {
   return (
