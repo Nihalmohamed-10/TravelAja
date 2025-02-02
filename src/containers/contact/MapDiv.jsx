@@ -61,12 +61,13 @@ function MapDiv() {
       </div>
 
       <div className="w-[100%]  xl:w-[50%]">
-        <div className="w-[90%] mx-auto h-[300px] overflow-hidden ">
-          <img
-            className="w-full h-full object-cover block"
-            src={map}
-            alt="Map"
-          />
+        <div className="w-[90%] mx-auto h-[300px] overflow-hidden">
+          <iframe
+            className="w-full h-full rounded-lg border-0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126907.29275309103!2d110.32116878565807!3d-7.795579652097311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a579dc69b0e61%3A0xcbb6313f4e5f2203!2sYogyakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1647000847123!5m2!1sen!2sus"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
         </div>
         <div className="max-w-[90%] mt-6 flex flex-col gap-5 items-center justify-between md:flex-row mx-auto justify-evenly xl:justify-between">
           <div className="flex items-center w-[250px] justify-between">
