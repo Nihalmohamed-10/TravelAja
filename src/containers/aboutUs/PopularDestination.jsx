@@ -15,7 +15,7 @@ function PopularDestination() {
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap gap-8 items-center justify-evenly md:flex-row md:flex-wrap xl:gap-1 xl:max-w-[1280px] xl:mx-auto">
+      <div className="flex flex-wrap gap-8 items-center justify-evenly md:flex-row md:flex-wrap xl:gap-1 ">
         <GreenIcons
           img={greenIcn1}
           heading={"Best price guarantee"}

@@ -12,12 +12,12 @@ function Benefit() {
 
         {benefit.map((item, index) => (
           <div className="flex gap-4 w-[80%] mx-auto xl:w-full" key={index}>
-            <div className="w-[48px] h-[64px]">
+            <div className="w-[70px] h-[64px]">
               <img className="w-[100%] block" src={item.img} alt="" />
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 xl:w-[391px]">
               <h3 className="text-[27px] font-bold">{item.head}</h3>
-              <p className="max-w-[308px] text-[16px] font-light xl:text-lg leading-loose">
+              <p className="w-[308px] text-[16px] font-light xl:text-lg leading-loose xl:w-full">
                 {item.content}
               </p>
               <button className="font-bold cursor-pointer bg-[#43B97F] w-[119px] pt-[10px] pr-[15px] pb-[10px] pl-[15px] rounded-xl text-[white]">

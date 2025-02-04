@@ -24,7 +24,7 @@ function AboutTravelaja() {
         </p>
       </div>
       <div className="w-[425px]">
-        <img src={aboutTravel} alt="img" />
+        <img className="w-full" src={aboutTravel} alt="img" />
       </div>
     </div>
   );

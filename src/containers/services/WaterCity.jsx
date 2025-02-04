@@ -18,17 +18,17 @@ function WaterCity() {
           </div>
         ))}
       </div>
-      <div className="mt-20 grid grid-cols-1 gap-y-[40px] justify-evenly lg:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-20 grid grid-cols-1 gap-y-[40px] justify-evenly lg:grid-cols-2 xl:grid-cols-3 gap-3 xl:pl-[40px] xl:pr-[40px] ">
       {waterDreams.map((item, index) => (
-          <div className="mx-auto flex flex-col sm:mx-auto" key={index}>
+          <div className="mx-auto flex flex-col sm:mx-auto xl:w-[96%]" key={index}>
             <div className="relative w-[80%] mx-auto sm:w-[100%]">
-              <div className="h-[244px] xl:h-auto xl:w-[1/3]">
-                <img className="h-[100%] " src={item.img} alt="img" />
+              <div className="h-[244px]  xl:w-[1/3] xl:h-[270px]">
+                <img className="h-[100%] xl:w-full " src={item.img} alt="img" />
               </div>
-              <div className="text-[white] flex flex-col gap-4 absolute top-[20px] left-[25px]">
+              <div className="text-[white] flex flex-col gap-4 absolute top-[20px] left-[25px] xl:p-[16px]">
                 <h2 className="text-[20px] font-bold w-[225px]">{item.head}</h2>
                 <p className="text-[14px] w-[200px] font-bold">{item.date}</p>
-                <p className="text-[14px] w-[250px] font-light">
+                <p className="text-[14px] w-[250px] font-light xl:w-full xl:text-base/6">
                   {item.content}
                 </p>
                 <button className="cursor-pointer hover:bg-[green] w-[119px] pt-[5px] pr-[15px] pb-[5px] pl-[15px] border border-green-300 rounded-lg">

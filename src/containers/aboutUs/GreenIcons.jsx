@@ -9,7 +9,7 @@ function GreenIcons({img,heading,content}) {
         <p className='text-[22px]'>
             {heading}
         </p>
-        <p className='text-[14px] w-[300px] font-extralight lg:w-full'>
+        <p className='text-[14px] w-[300px] font-extralight lg:w-full xl:w-[86%]'>
             {content}
         </p>
     </div>

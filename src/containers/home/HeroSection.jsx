@@ -1,6 +1,7 @@
 import React from "react";
 import heroBg from "../../assets/images/heroBg.png";
 import locationIcon from "../../assets/images/locationIcon.png";
+import BasicDatePicker from './BasicDatePicker'
 
 function Hero() {
   return (
@@ -27,22 +28,16 @@ function Hero() {
             <div className="w-[18%]">
               <img src={locationIcon} alt="" />
             </div>
-            {/* <div className="text-[11px] lg:text-[16px] sm:text-[14px]">
-              City or Destination
-            </div> */}
+            
             <div className="text-[13px] lg:text-[16px] sm:text-[14px]">
                 <input className=" p-2 w-[100%] placeholder-black" type="text" placeholder="City or Destination" />
             </div>
           </div>
-          <div className="p-2 text-[11px] sm:text-[14px] lg:border-r lg:text-[16px] lg:w-[30%] sm:w-[33%] lg:p-4">
-            Date of stay
+          <div className="p-2 text-[11px] sm:text-[14px] lg:border-r lg:text-[16px] lg:w-[30%] sm:text-center lg:p-1">
+            <BasicDatePicker
+            />
           </div>
-          {/* <div className="p-2 text-[11px] sm:text-[14px] lg:border-r lg:text-[16px] lg:w-[100%] sm:w-[100%]">
-            <input className="p-2 w-[100%]" type="date" placeholder="date" />
-          </div> */}
-          {/* <div className="p-2 text-[11px] sm:text-[14px] lg:text-[16px]">
-            Person
-          </div> */}
+         
           <div className=" p-2 text-[13px] sm:text-[14px] lg:text-[16px]">
             <input className="text-center p-2 w-[100%] placeholder-black"type="number" placeholder="Person" />
           </div>
