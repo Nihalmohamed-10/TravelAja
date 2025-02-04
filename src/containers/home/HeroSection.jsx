@@ -2,12 +2,12 @@ import React from "react";
 import heroBg from "../../assets/images/heroBg.png";
 import locationIcon from "../../assets/images/locationIcon.png";
 
- function Hero() {
+function Hero() {
   return (
     <div className="relative">
-      <div className="h-[400px] lg:h-auto lg:w-[100%]">
+      <div className="h-[500px] sm:h-[600px] lg:h-[780px] ">
         <img
-          className="h-[400px] lg:h-auto w-full block"
+          className="h-[500px] sm:h-[600px] lg:h-[780px]  w-full block"
           src={heroBg}
           alt="img"
         />
@@ -22,22 +22,31 @@ import locationIcon from "../../assets/images/locationIcon.png";
           porttitor rhoncus dolor purus non enim praesent elementum facilisis
           leo,
         </p>
-        <div className="w-[50%] pb-5 flex flex-col  mx-auto items-center  justify-evenly bg-white  rounded-lg lg:flex-row lg:p-5 lg:w-[70%] lg:justify-between xl:w-[60%]">
-          <div className=" flex items-center justify-evenly    p-2 w-[100%] lg:w-[37%] sm:w-[55%]  lg:border-r">
-            <div>
+        <div className="w-[50%] pb-5 flex flex-col  mx-auto items-center  justify-evenly bg-white  rounded-lg lg:flex-row lg:p-2 lg:w-[70%] lg:justify-between xl:w-[60%]">
+          <div className=" flex items-center justify-evenly    p-2 w-[100%] lg:w-[40%] sm:w-[100%]  lg:border-r">
+            <div className="w-[18%]">
               <img src={locationIcon} alt="" />
             </div>
-            <div className="text-[11px] lg:text-[16px] sm:text-[14px]">
+            {/* <div className="text-[11px] lg:text-[16px] sm:text-[14px]">
               City or Destination
+            </div> */}
+            <div className="text-[13px] lg:text-[16px] sm:text-[14px]">
+                <input className=" p-2 w-[100%] placeholder-black" type="text" placeholder="City or Destination" />
             </div>
           </div>
-          <div className="p-2 text-[11px] sm:text-[14px] lg:border-r lg:text-[16px] lg:w-[20%] sm:w-[33%]">
+          <div className="p-2 text-[11px] sm:text-[14px] lg:border-r lg:text-[16px] lg:w-[30%] sm:w-[33%] lg:p-4">
             Date of stay
           </div>
-          <div className="p-2 text-[11px] sm:text-[14px] lg:text-[16px]">
+          {/* <div className="p-2 text-[11px] sm:text-[14px] lg:border-r lg:text-[16px] lg:w-[100%] sm:w-[100%]">
+            <input className="p-2 w-[100%]" type="date" placeholder="date" />
+          </div> */}
+          {/* <div className="p-2 text-[11px] sm:text-[14px] lg:text-[16px]">
             Person
+          </div> */}
+          <div className=" p-2 text-[13px] sm:text-[14px] lg:text-[16px]">
+            <input className="text-center p-2 w-[100%] placeholder-black"type="number" placeholder="Person" />
           </div>
-          <button className="cursor-pointer sm:text-[14px] bg-green-500 text-white p-2 rounded text-[11px] lg:text-[16px] ">
+          <button className="cursor-pointer sm:text-[14px] bg-green-500 text-white p-2 rounded text-[11px] lg:text-[16px] lg:w-[190px] ">
             Find trip now
           </button>
         </div>

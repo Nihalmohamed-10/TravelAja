@@ -3,17 +3,17 @@ import { destination } from "../../data.js";
 
 function Destination() {
   return (
-    <div className="mx-auto mt-20 max-w-7xl lg:mt-10 lg:w-full">
+    <div className="mx-auto mt-20 max-w-full lg:mt-10 lg:w-full">
       <div className="text-center">
         <p className="text-[16px] font-bold text-[#295943]">top destination</p>
         <h2 className="text-[27px] font-bold">Discover your love</h2>
       </div>
 
-      <div className="cursor-pointer  w-[80%] mx-auto grid grid-cols-1 justify-items-center gap-y-6 gap-x-12 lg:grid-cols-2 lg:mt-10 xl:grid-cols-3 xl:w-[90%]">
+      <div className="mt-10 cursor-pointer  max-w-[90%] mx-auto grid grid-cols-1 justify-items-center gap-y-6 gap-x-12 lg:grid-cols-2 lg:mt-10 xl:grid-cols-3 xl:w-[100%] xl:max-w-[1200px] 2xl:max-w-[1400px]">
         {destination.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col p-6 border border-gray-300 shadow-lg rounded-lg space-y-4"
+            className="flex flex-col p-6 border border-gray-300 shadow-lg rounded-lg space-y-4 w-[1/3]"
           >
             <div className="w-full">
               <img

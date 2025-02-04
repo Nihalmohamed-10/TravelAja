@@ -9,13 +9,13 @@ function PopularDestination() {
     <div className="mt-20 flex flex-col gap-20 pb-20 w-full">
       <div>
         <div className="text-center">
-          <h2 className="text-[22px] font-bold">Why Choose Us</h2>
-          <p className="text-[14px] font-light ">
+          <h2 className="text-[22px] font-bold xl:text-[27px] font-bold">Why Choose Us</h2>
+          <p className="text-[14px] font-light xl:text-[16px]">
             These popular destinations have a lot to offer
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap gap-8 items-center justify-evenly md:flex-row md:flex-wrap">
+      <div className="flex flex-wrap gap-8 items-center justify-evenly md:flex-row md:flex-wrap xl:gap-1 xl:max-w-[1280px] xl:mx-auto">
         <GreenIcons
           img={greenIcn1}
           heading={"Best price guarantee"}

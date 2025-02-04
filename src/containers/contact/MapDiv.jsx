@@ -53,7 +53,7 @@ function MapDiv() {
 
           <button
             type="submit"
-            className="bg-[#43B97F] text-white hover:bg-[white] hover:text-[#43B97F]  rounded-md pt-[5px] pr-[20px] pb-[5px] pl-[20px] w-[81px] transition-all"
+            className="cursor-pointer bg-[#43B97F] text-white hover:bg-[white] hover:text-[#43B97F]  rounded-md pt-[5px] pr-[20px] pb-[5px] pl-[20px] w-[81px] transition-all"
           >
             Send
           </button>

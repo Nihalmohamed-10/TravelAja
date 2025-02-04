@@ -15,15 +15,15 @@ function Facilities() {
         <div>
           <img src="" alt="" />
         </div>
-        <div className="flex flex-col gap-5 md:w-[50%]">
+        <div className="text-center flex flex-col gap-5 md:w-[50%] xl:text-start">
           <h1 className="text-[22px] font-bold">facilities</h1>
-          <p className=" max-w-[580px] text-[14px] font-light">
+          <p className=" max-w-[580px] text-[14px] font-light xl:text-lg leading-loose">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna fringilla urna,
             porttitor rhoncus dolor purus non enim luctus venenatis, lectus
             magna fringilla urna, porttitor rhoncus dolor purus non eni
           </p>
-          <button className="cursor-pointer w-[127px] pt-[10px] pr-[20px] pb-[10px] pl-[20px] bg-[#43B97F] rounded-lg text-[white]">
+          <button className="mx-auto cursor-pointer w-[127px] pt-[10px] pr-[20px] pb-[10px] pl-[20px] bg-[#43B97F] rounded-lg text-[white] xl:mx-0">
             Read More
           </button>
         </div>
